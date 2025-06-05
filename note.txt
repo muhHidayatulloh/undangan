@@ -1,0 +1,22 @@
+kolom yang di perlukan
+- tanggal jam nikah
+- tanggal jam resepsi
+- nama pengantin pria
+- nama pengantin wanita
+- salam
+- ucapan sambutan
+- nama ayah pria
+- nama ibu pria
+- nama ayah wanita
+- nama ibu wanita
+- share loc
+- ucapan kirim hadiah
+
+tabel rekening
+- nomor rekening
+- atas nama
+
+tabel kirim paket hadiah
+- nama penerima
+- no hp
+- alamat

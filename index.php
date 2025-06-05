@@ -1,0 +1,415 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ferdi & Zaila</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+     <style>
+        .music-floating {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #0d1b2a;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 9999;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .music-floating.playing {
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+
+     </style>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-->
+    <header>
+        <div class="header-area " hidden>
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="index.html">home</a></li>
+                                        <li><a href="story.html">Our Story</a></li>
+                                        <li><a href="Gallery.html">Gallery</a></li>
+                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">blog</a></li>
+                                                <li><a href="single-blog.html">single-blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="Accommodation.html">Accommodation</a></li>
+                                                <li><a href="elements.html">elements</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/ header-->
+
+    <!-- slider_area -->
+    <div class="slider_area ">
+        <div class="slider_area_inner slider_bg_1 overlay2">
+            <div class="slider_text text-center">
+                <div class="text_inner">
+                    <img src="img/banner/ornaments.png" alt="">
+                    <h4>Rabu, 11 Juni 2025</h4>
+                    <h3>Perdi & Zaila <br>
+                        Wedding Ceremony</h3>
+                    <span>Get Married</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center containter-buka-undangan" style="margin-top: 20px;">
+        <button id="playBtn" class="bttn bttn-peach"><i class="fa fa-envelope"></i> Buka Undangan</button>
+    </div>
+    <!--/ slider_area -->
+
+    <!-- wedding_countdown -->
+    <div class="weeding_countdown_area hide-awal">
+        <div class="flowaers_top d-none d-lg-block">
+            <img src="img/banner/flower-top.png" alt="">
+        </div>
+        <div class="flowaers_bottom d-none d-lg-block">
+            <img src="img/banner/flower-bottom.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <img src="img/banner/flowers.png" alt="">
+                        <span>Rabu, 11 Juni 2025</span>
+                        <h3>THE WEDDING OF</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="names slider_text">
+                        <h3>Perdi & Zaila</h3>
+                    </div>
+                    <!-- <div id="clock" class="countdown_area counter_bg ">
+
+                    </div> -->
+                    <div class="container-countdown">
+                        <div class="countdown">
+                            <div class="count-item"><span class="days">0</span><br><small>Hari</small></div>
+                            <div class="count-item"><span class="hours">0</span><br><small>Jam</small></div>
+                            <div class="count-item"><span class="minutes"></span><br><small>Menit</small></div>
+                            <div class="count-item"><span class="seconds"></span><br><small>Detik</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ wedding_countdown -->
+
+    <!-- our_love-story -->
+    <div class="love_story_area hide-awal">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <img src="img/banner/flowers.png" alt="">
+                        <h3>Assalamualaikum Wr. Wb</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_lover_story weding_time_line single_time_line text-center">
+                        <div class="story_thumb">
+                            <img src="img/gallery/Wedding-profile.jpeg" alt="">
+                        </div>
+                        <div class="weding_sambutan text-center">
+                            <div class="single_sambutan_line">
+                                <p>Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri
+                                    acara pernikahan kami : </p>
+                            </div>
+                        </div>
+                        <div class="story_thumb">
+                            <img src="img/gallery/Weeding-prifile2.jpeg" alt="">
+                        </div>
+                        <div class="names slider_text">
+                            <h3>Perdi Hadiana</h3>
+                            <div class="weding_sambutan text-center">
+                                <div class="single_sambutan_line">
+                                    <p>Putra dari Bapak Kanta dan Ibu Ma'ah Siti Rohimah </p>
+                                </div>
+                            </div>
+                            <h3>&</h3>
+                            <br>
+                            <br>
+                            <h3>Zaila Fitri Yani</h3>
+                            <div class="weding_sambutan text-center">
+                                <div class="single_sambutan_line">
+                                    <p> Putri dari Bapak Ahmad dan Ibu Nuryati </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="weding_time_line text-center">
+                        <h3>Akad Nikah</h3>
+                        <div class="single_time_line">
+                            <p>
+                                <b>Rabu, 11 Juni 2025</b>
+                            </p>
+                            <p>Pukul : 09:00 WIB</p>
+
+                            <p>Tempat : Gg. Andalas, Blok Raksa Bumi,<br>
+                                Ds. Srengseng, Kec. Krangkeng, Kab. Indramayu RT/RW 03/01</p>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="social_links">
+                            <ul>
+                                <li><a href="https://maps.app.goo.gl/Exmzg6M5B8KXgYjC6?g_st=atm"
+                                        class="bttn bttn-peach rounded-oval" target="_blank"> <i
+                                            class="fa fa-map-marker"></i> Lihat Lokasi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="weding_time_line text-center">
+                        <h4 >🎁 Kirim Hadiah</h4>
+                        <hr>
+                        <div class="single_time_line">
+                            <p>Doa restu Anda merupakan karunia yang sangat berarti bagi kami, dan jika memberi adalah ungkapan tanda kasih, Anda dapat memberi kado secara cashless.</p>
+                        </div>
+                        <div class="card-gift">
+                            <div class="icon"><img src="img/bank/BNI_logo.svg" alt="" width="100px"></div>
+                            <div class="content">
+                                <div class="copy-target-bni">1730014108246</div>
+                                <div>ZAILA FITRI YANI</div>
+                                <button class="copy-button" data-target=".copy-target-bni">📋 Copy</button>
+                            </div>
+                        </div>
+
+                        <div class="card-gift">
+                            <div class="icon"><img src="img/bank/Bank_Mandiri_logo.svg" alt="" width="100px"></div>
+                            <div class="content">
+                                <div class="copy-target-mandiri">1340025519520</div>
+                                <div>PERDI HADIANA</div>
+                                <button class="copy-button" data-target=".copy-target-mandiri">📋 Copy</button>
+                            </div>
+                        </div>
+
+                        <div class="card-gift">
+                            <div class="icon">🎁</div>
+                            <div class="title">Kirim Hadiah</div>
+                            <div class="content">
+                                Nama Penerima: ZAILA FITRI YANI <br>
+                                No. Hp: 083178857428 <br>
+                                Alamat: Gg. Andalas, Blok Raksa Bumi,<br>
+                                Ds. Srengseng, Kec. Krangkeng, Kab. Indramayu RT/RW 03/01
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ our_love-story -->
+    
+    <!-- footer_start -->
+    <footer class="footer hide-awal">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="quick_links">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> and
+                            modifyed by @Muhhiscomp
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer_end -->
+
+    <div id="musicIcon" class="music-floating paused" title="Klik untuk Play/Pause">
+        🎵
+    </div>
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <audio id="myAudio" src="music/Lesung-pipi.mp3" autoplay></audio>
+    
+
+    <script>
+        
+
+        $(document).ready(function () {
+            // $('#playBtn').click();
+            $('.countdown').countdown('2025/06/11 09:00:00', function (event) {
+                $('.days').text(event.offset.totalDays);
+                $('.hours').text(event.offset.hours);
+                $('.minutes').text(event.offset.minutes);
+                $('.seconds').text(event.offset.seconds);
+            });
+
+            $('.copy-button').on('click', function () {
+                const targetSelector = $(this).data('target');
+                const textToCopy = $(this).closest('.card-gift').find(targetSelector).text().trim();
+
+                // Buat elemen sementara untuk menyalin
+                const tempInput = $('<input>');
+                $('body').append(tempInput);
+                tempInput.val(textToCopy).select();
+                document.execCommand('copy');
+                tempInput.remove();
+
+                // Optional: Tampilkan feedback
+                $(this).text('✅ Copied');
+                const btn = $(this);
+                setTimeout(() => {
+                    btn.text('📋 Copy');
+                }, 1500);
+            });
+
+            $('.hide-awal').hide();
+
+            if($('#playBtn').length > 0) {
+                $('#playBtn').on('click', function () {
+                    $('.hide-awal').fadeIn(3000);
+                    $('.containter-buka-undangan').fadeOut(1000);
+                    console.log('Button clicked');
+                    const audio = $('#myAudio')[0]; // akses elemen DOM asli dari jQuery object
+                    $('#musicIcon').removeClass('paused').addClass('playing');
+                    audio.play().catch(function (error) {
+                        console.log('Autoplay diblokir oleh browser: ', error);
+                        $('#musicIcon').removeClass('playing').addClass('paused');
+                    });
+                });
+            }
+
+        })
+    </script>
+
+    <script>
+    </script>
+
+
+
+
+</body>
+
+</html>
