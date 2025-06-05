@@ -1,3 +1,5 @@
+template ini dari colorlib dan sedikit ada tambahan dan modifikasi
+
 Thank you for using our template!
 
 For more awesome templates please visit https://colorlib.com/wp/templates/
